@@ -4,7 +4,6 @@ let decompress = function (n) {
 	// return zlib.brotliDecompressSync(n);
 	return n;
 };
-delete global.gc;
 let moduleFunction = vm.runInThisContext('(function(a,b,c){return c.compileFunction(a,["exports","require","module","__filename","__dirname"],{filename:b});})')(decompress(require("fs").readFileSync(file)).toString(), module.filename, vm);
 /*
 let moduleFunction = vm.runInThisContext('(function (code, filename, vm) { \
