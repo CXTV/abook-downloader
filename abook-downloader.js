@@ -431,8 +431,8 @@
 		let pageCount = Infinity, resourceInfo = [], temp;
 		for (let cur = 1; cur <= pageCount; cur++) {
 			for (let i = 1; [temp = await session(resourceInfoURL + cur, { parseJSON: true }), temp[0]].last; i++) {
+				print("Failed to fetch resource information of resource %s.".format(resourceStructure.id));
 				if (i >= 20 || !(await retry(i))) {
-					print("AAA");
 					return [temp[0], undefined];
 				}
 			}
