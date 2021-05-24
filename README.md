@@ -1,10 +1,10 @@
 ## 一个用于在高等教育出版社的Abook网站上下载课程资源的小工具
 
-### Bug:
-### 请不要使用上一个Release里提供的微型Node.js！我在打包时不小心加了--expose-gc选项，因此所有garbage-collection停止自动执行，导致内存泄漏。
-### 请到https://npm.taobao.org/mirrors/node/latest-v16.x下载Node.js运行环境。node-v16.2.0-darwin-arm64.tar.gz是M1 Mac的，node-v16.2.0-darwin-x64.tar.gz是Intel Mac的，win-x64/node.exe是Windows的。
-### 去https://github.com/Sam0230/abook-downloader/releases/download/beta-05-23-2021/abook-downloader.bundle.min.js下载bundle，Windows的使用方法不变，macOS是把abook-downloader.bundle.min.js移动到解压出的文件夹里的bin，右键bin，再选择 新建位于文件夹位置的终端标签页（接下来详见https://www.zhihu.com/question/267013491/answer/1902121086）
-### 今天（2021.05.24）我只能用信息课时间写一下这个，我回家后会让我父母明天晚上把我自己的电脑带来，重新打包（我是高中生）。
+#### Bug:
+#### 请不要使用上一个Release里提供的微型Node.js！我在打包时不小心加了--expose-gc选项，因此所有garbage-collection停止自动执行，导致内存泄漏。
+#### 请到https://npm.taobao.org/mirrors/node/v16.2.0/ 下载Node.js运行环境。node-v16.2.0-darwin-arm64.tar.gz是M1 Mac的，node-v16.2.0-darwin-x64.tar.gz是Intel Mac的，win-x64/node.exe是Windows的。
+#### 去https://github.com/Sam0230/abook-downloader/releases/download/beta-05-23-2021/abook-downloader.bundle.min.js 下载bundle，Windows的使用方法不变，macOS是把abook-downloader.bundle.min.js移动到解压出的文件夹里的bin，右键bin，再选择 新建位于文件夹位置的终端标签页（接下来详见https://www.zhihu.com/question/267013491/answer/1902121086 ）
+#### 今天（2021.05.24）我只能用信息课时间写一下这个，我回家后会让我父母明天晚上把我自己的电脑带来，重新打包（我是高中生）。
 
 使用Node.js编写，依赖progress、request、string-width、performance-now模块。
 
